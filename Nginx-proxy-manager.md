@@ -1,11 +1,13 @@
 # Nginx Proxy Manager 
 
 ## contents 
-- Installation
-- Reverse Proxy 
-- SSL Certificate 
+- [Installation](#install)
+- [Reverse Proxy](#reverse) 
+- [SSL Certificate](#SSL) 
 
-## installation 
+## installation <a id="install"></a>
+
+### steps for basic installation of Proxy manager on docker 
 
 1. Install Docker and Docker Compose 
 2. Install npm 
@@ -30,16 +32,21 @@ services:
 
 ```
 
-visit localhostip:81 on url , for accessing the ui 
+#### visit localhostip:81 on url , for accessing the ui 
 
-Default admin user:
+#### Default admin user:
+```
 
 Email: admin@example.com
 Password: changeme
 
-# Configure Reverse Proxy 
+```
+
+# Configure Reverse Proxy <a id="reverse"></a>
 
 ### Create an upstream server:
+
+#### login on localhost:81 using default user
 
 1. Click on "Proxy Hosts" in the left sidebar.
 
@@ -51,10 +58,13 @@ Password: changeme
 Configure any other desired settings, such as SSL certificates, access controls, or custom headers.
 Save the configuration.
 
-# Using Cert_bot 
 
-### Installation 
-Install certbot on the host machine 
+# Using Cert_bot <a id="SSL"></a>
+
+### Installation of certbot 
+
+Install certbot on the host machine and not on docker container 
+
 
 '''
 
