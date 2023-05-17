@@ -1,5 +1,9 @@
-[Install](#installation)
+# Nginx 
 
+Contents
+
+- [Installation](#installation)
+- [Reverse Proxy set-up] (#reverseproxy)
 
 
 <p id:installation> Installation method </p>
@@ -36,7 +40,7 @@ verify settings by
 sudo ufw status
 ```
 
-# Reverse Proxy 
+# Reverse Proxy <pid = "reverseproxy"> </p>
 Intermediary Components that receives requests and forwards it to relevant endpoint ,
 
 for example :- running npm app on port 3001 instead of 3000
