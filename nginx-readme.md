@@ -1,4 +1,4 @@
-# Nginx 
+# Nginx | Instalaation | Reverse Proxy Configuration
 
 ### Contents
 
