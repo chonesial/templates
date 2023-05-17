@@ -1,4 +1,4 @@
-# Nginx | Instalaation | Reverse Proxy Configuration
+# Nginx | Installation | Reverse Proxy Configuration
 
 ### Contents
 
@@ -14,13 +14,16 @@ sudo apt install nginx
 ```
 
 
-nginx firewall list 
+#### Nginx firewall list 
+When the firewall is installed and we need to allow list of modules to authenticate for firewall passing .
 
 ```
 sudo ufw app list
 ```
 
 Output
+these are the list of module apps used by Nginx. 
+
 ```
 Available applications:
   Nginx Full
@@ -29,20 +32,27 @@ Available applications:
   OpenSSH
 ```
 
-now allow full configuration
+Now, allow all the modules or as per the preffered work.
+
 
 ```
   sudo ufw allow 'Nginx Full'
 ```
-verify settings by 
+
+verify settings by firewall using :
 
 ```
 sudo ufw status
 ```
 
+Thus, the Installation is complete . 
+
+### you can checkout the browser on localhost:80 
+
+
 # Reverse Proxy <a id="reverseproxy"> </a>
 
-Intermediary Components that receives requests and forwards it to relevant endpoint ,
+Intermediary Components that receives requests and forwards it to relevant endpoint .
 
 for example :- running npm app on port 3001 instead of 3000
 
